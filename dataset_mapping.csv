@@ -1,0 +1,12 @@
+Experiment,Task,Dataset/source used,Reason/notes
+1,Pretrained LM inference,BattingCoach-domain prompts; model inference only,Do not train the LLM on bat images
+2,Text preprocessing/tokenization/embeddings,Small domain corpus derived from repository documentation and shot taxonomy,Not raw image data
+3,Prompt engineering,BattingCoach-domain task prompts,Controlled same task across strategies
+4,VAE image generation,MNIST (as specified in experiment sheet),Cricket-bat dataset is not the prescribed MNIST benchmark
+5,T5 translation + BLEU plots,English/French pairs from experiment sheet,Cricket image data is not a translation corpus
+6,GAN image generation,MNIST (as specified in experiment sheet),Keep assigned baseline dataset
+7,GPT/BERT comparison,BattingCoach-domain text examples,No fine-tuning on image annotations
+8,Semantic retrieval,Repository facts and project documentation as text chunks,FAISS over text embeddings
+9,RAG QA,Repository/documentation corpus as source-labelled chunks,Source labels retained for traceability
+10,LLM evaluation & responsible AI,Synthetic non-sensitive prompts and BattingCoach fact checks,No real athlete data; fixed candidates are illustrative until replaced
+11,Gradio LLM app,BattingCoach-domain prompts + compact pretrained LLM,"Separate educational app, not replacement for project app"
